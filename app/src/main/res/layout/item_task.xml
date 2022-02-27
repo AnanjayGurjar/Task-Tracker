@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/cardView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    android:elevation="12dp"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:background="?selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tv_taskTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Task title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_taskTitle"
+            android:layout_marginStart="12dp"
+            android:text="Progress: "
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_daysAlloted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_taskTitle"
+            android:layout_toStartOf="@id/tv_timeAlloted"
+            android:layout_marginBottom="12dp"
+            android:text="Time Alloted 5 days " />
+
+        <TextView
+            android:id="@+id/tv_timeAlloted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_taskTitle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="12 : 00 : 00" />
+        <TextView
+            android:id="@+id/tv_daysRemaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_timeAlloted"
+            android:layout_toStartOf="@id/tv_timeSpent"
+            android:layout_marginBottom="12dp"
+            android:text="Time Remaining 4 days " />
+
+        <TextView
+            android:id="@+id/tv_timeSpent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_timeAlloted"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:text="12 : 00 : 00" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="added At"
+            android:textStyle="italic"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="12dp"
+            android:layout_alignTop="@+id/tv_timeSpent"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
